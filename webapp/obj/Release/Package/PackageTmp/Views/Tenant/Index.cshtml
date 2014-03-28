@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "S’inscrire";
+}
+
+<h2>@ViewBag.Title.</h2>
+
+@using (Html.BeginForm("SignUp", "Tenant", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    <h4>Commencez à utiliser cette application dans votre organisation.</h4>
+    <hr />
+    @Html.ValidationSummary(true)
+    <p>
+        Inscrivez-vous comme administrateur pour permettre aux utilisateurs de votre organisation d'utiliser cette application.
+        Cliquez sur S'inscrire pour vous connecter au portail Windows Azure et autoriser l'application à accéder au répertoire de votre organisation.
+    </p>
+    <input type="submit" name="submit" value="S'inscrire" class="btn btn-default" />
+}

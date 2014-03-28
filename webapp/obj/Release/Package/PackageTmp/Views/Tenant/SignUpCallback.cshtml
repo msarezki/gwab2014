@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Bienvenue";
+}
+
+<h2>@ViewBag.Title.</h2>
+
+@using (Html.BeginForm("SignIn", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    <h4>Inscription réussie.</h4>
+    <hr />
+    @Html.ValidationSummary(true)
+    <p>
+        Cette application est maintenant fournie dans votre locataire Windows Azure Active Directory.
+        Les utilisateurs de votre Active Directory peuvent s'y connecter avec leur compte Active Directory. Veuillez vous connecter pour utiliser cette application.
+    </p>
+    <p>
+        Vous pouvez révoquer l'accès à cette application à tout moment, en accédant à votre locataire Windows Azure Active Directory dans le portail Windows Azure.
+    </p>
+    <input type="submit" name="submit" value="Se connecter" class="btn btn-default" />
+}

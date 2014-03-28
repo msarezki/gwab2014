@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="AD_AudienceUriAppSetting" description="AD Audience Uri App Setting" defaultValue="https://mltdemo.onmicrosoft.com/webapp" tags="AD_AudienceUriAppSetting">
+    <parameterEntry kind="XmlFile" scope="D:\\Users\\msarezki\\Documents\\Visual\ Studio\ 2013\\Projects\\GwabGoodies\\webapp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:AudienceUri']/@value" />
+  </parameter>
+  <parameter name="AD_RealmAppSetting" description="AD Realm App Setting" defaultValue="https://mltdemo.onmicrosoft.com/webapp" tags="AD_RealmAppSetting">
+    <parameterEntry kind="XmlFile" scope="D:\\Users\\msarezki\\Documents\\Visual\ Studio\ 2013\\Projects\\GwabGoodies\\webapp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:Realm']/@value" />
+  </parameter>
+  <parameter name="AD_ClientID" description="AD Client Application ID" defaultValue="379e067d-b31c-4d50-bf68-9a2b672d4f22" tags="AD_ClientAPPID">
+    <parameterEntry kind="XmlFile" scope="D:\\Users\\msarezki\\Documents\\Visual\ Studio\ 2013\\Projects\\GwabGoodies\\webapp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:ClientID']/@value" />
+  </parameter>
+  <parameter name="AD_ClientPassword" description="AD Client Password" defaultValue="BddD++cUCSM6m9LlaPkrozv2obx99ii/Hjka0uE1BW0=" tags="AD_Password">
+    <parameterEntry kind="XmlFile" scope="D:\\Users\\msarezki\\Documents\\Visual\ Studio\ 2013\\Projects\\GwabGoodies\\webapp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:Password']/@value" />
+  </parameter>
+  <parameter name="AD_APPIDUri" description="AD AppIDUri" defaultValue="APPIDUri" tags="ADrealmUri">
+    <parameterEntry kind="XmlFile" scope="D:\\Users\\msarezki\\Documents\\Visual\ Studio\ 2013\\Projects\\GwabGoodies\\webapp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/system.identityModel/identityConfiguration/audienceUris/add[@value='APPIDUri']/@value" />
+    <parameterEntry kind="XmlFile" scope="D:\\Users\\msarezki\\Documents\\Visual\ Studio\ 2013\\Projects\\GwabGoodies\\webapp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/system.identityModel.services/federationConfiguration/wsFederation[@issuer='https://login.windows.net/common/wsfed']/@realm" />
+  </parameter>
+</parameters>

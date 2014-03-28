@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="mltdemo" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^d:\\users\\msarezki\\documents\\visual\ studio\ 2013\\Projects\\webapp\\webapp\\obj\\Debug\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^d:\\users\\msarezki\\documents\\visual\ studio\ 2013\\Projects\\webapp\\webapp\\obj\\Debug\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DataContext-Web.config Connection String" description="" value="Data Source=tcp:dk0zxx2x6g.database.windows.net,1433;Initial Catalog=mltdemo-data;Integrated Security=False;User ID=ogasa6@dk0zxx2x6g;Password={votre_mot_de_passe_ici};Connect Timeout=30;Encrypt=True" tags="">
+    <parameterEntry kind="XmlFile" scope="d:\\users\\msarezki\\documents\\visual\ studio\ 2013\\Projects\\webapp\\webapp\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DataContext']/@connectionString" />
+  </parameter>
+  <parameter name="TenantDbContext-Web.config Connection String" description="" value="Data Source=tcp:dk0zxx2x6g.database.windows.net,1433;Initial Catalog=mltdemo-registrationtenant;Integrated Security=False;User ID=ogasa6@dk0zxx2x6g;Password=PASSword?1;Connect Timeout=30;Encrypt=True" tags="">
+    <parameterEntry kind="XmlFile" scope="d:\\users\\msarezki\\documents\\visual\ studio\ 2013\\Projects\\webapp\\webapp\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='TenantDbContext']/@connectionString" />
+  </parameter>
+  <parameter name="AD_APPIDUri" description="" value="https://mltdemo.onmicrosoft.com/WebApp-mltdemo.azurewebsites.net" tags="">
+    <parameterEntry kind="XmlFile" scope="d:\\users\\msarezki\\documents\\visual\ studio\ 2013\\Projects\\webapp\\webapp\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/system.identityModel/identityConfiguration/audienceUris/add[@value='APPIDUri']/@value" />
+    <parameterEntry kind="XmlFile" scope="d:\\users\\msarezki\\documents\\visual\ studio\ 2013\\Projects\\webapp\\webapp\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/system.identityModel.services/federationConfiguration/wsFederation[@issuer='https://login.windows.net/common/wsfed']/@realm" />
+  </parameter>
+  <parameter name="AD_ClientID" description="" value="845ed5de-f655-4c12-b5bb-46530c4e1f08" tags="">
+    <parameterEntry kind="XmlFile" scope="d:\\users\\msarezki\\documents\\visual\ studio\ 2013\\Projects\\webapp\\webapp\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:ClientID']/@value" />
+  </parameter>
+  <parameter name="AD_ClientPassword" description="" value="jQsJdT9ar7RA+xGVwoZ4BAHrxFZUJVEzQL0HVL2wtHQ=" tags="">
+    <parameterEntry kind="XmlFile" scope="d:\\users\\msarezki\\documents\\visual\ studio\ 2013\\Projects\\webapp\\webapp\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:Password']/@value" />
+  </parameter>
+  <parameter name="AD_RealmAppSetting" description="" value="https://mltdemo.onmicrosoft.com/WebApp-mltdemo.azurewebsites.net" tags="">
+    <parameterEntry kind="XmlFile" scope="d:\\users\\msarezki\\documents\\visual\ studio\ 2013\\Projects\\webapp\\webapp\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:Realm']/@value" />
+  </parameter>
+  <parameter name="AD_AudienceUriAppSetting" description="" value="https://mltdemo.onmicrosoft.com/WebApp-mltdemo.azurewebsites.net" tags="">
+    <parameterEntry kind="XmlFile" scope="d:\\users\\msarezki\\documents\\visual\ studio\ 2013\\Projects\\webapp\\webapp\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:AudienceUri']/@value" />
+  </parameter>
+</parameters>

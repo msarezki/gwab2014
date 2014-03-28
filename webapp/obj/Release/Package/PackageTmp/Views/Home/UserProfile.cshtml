@@ -1,0 +1,21 @@
+﻿@model webapp.Models.UserProfile
+@{
+    ViewBag.Title = "Profil utilisateur";
+}
+
+<h2>@ViewBag.Title.</h2>
+
+<table class="table table-bordered table-striped">
+    <tr>
+        <td>Nom complet</td>
+        <td>@Model.DisplayName</td>
+    </tr>
+    <tr>
+        <td>Prénom</td>
+        <td>@Model.GivenName</td>
+    </tr>
+    <tr>
+        <td>Nom</td>
+        <td>@Model.Surname</td>
+    </tr>
+</table>

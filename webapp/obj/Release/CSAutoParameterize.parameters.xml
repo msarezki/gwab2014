@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="TenantDbContext-Web.config Connection String" description="TenantDbContext Chaîne de connexion utilisée dans web.config par l’application pour accéder à la base de données." defaultValue="Server=tcp:dk0zxx2x6g.database.windows.net,1433;Database=gwab-tenants;User ID=ogasa6@dk0zxx2x6g;Password=PASSword?1;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\Users\\msarezki\\Documents\\Visual\ Studio\ 2013\\Projects\\GwabGoodies\\webapp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='TenantDbContext']/@connectionString" />
+  </parameter>
+  <parameter name="DataContext-Web.config Connection String" description="DataContext Chaîne de connexion utilisée dans web.config par l’application pour accéder à la base de données." defaultValue="Server=tcp:dk0zxx2x6g.database.windows.net,1433;Database=gwab-data;User ID=ogasa6@dk0zxx2x6g;Password=PASSword?1;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\Users\\msarezki\\Documents\\Visual\ Studio\ 2013\\Projects\\GwabGoodies\\webapp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DataContext']/@connectionString" />
+  </parameter>
+</parameters>
